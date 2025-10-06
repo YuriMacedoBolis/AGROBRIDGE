@@ -1,7 +1,21 @@
 {% extends 'nav.html' %}
 
 {% block content %}
-<h2>teste</h2>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, corporis sunt? Fugiat fugit delectus explicabo libero
-    voluptas nulla magni laborum ipsum rerum ullam in, doloribus natus soluta reiciendis eligendi eveniet?</p>
+    <div class="fotos">
+        <h2>Produto 1</h2>
+        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+        <a href="https://www.youtube.com/">Onde comprar</a>
+        <a href="https://www.youtube.com/">Site oficial</a>
+    </div>
+    <div class="fotos">
+        <h2>Produto 2</h2>
+        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+    </div>
+    <div class="fotos">
+        <h2>Produto 3</h2>
+        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+    </div>
+    
+
+    
 {% endblock %}
