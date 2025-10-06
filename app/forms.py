@@ -1,11 +1,11 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField , PasswordField , SubmitField
-from wtforms.validators import DataRequired  , EqualTo , ValidationError , Email
+from wtforms.validators import DataRequired  , EqualTo , ValidationError
 from app.models import User
 
 class RegisterForm(FlaskForm):
     nome = StringField("Nome de usuário:" , validators=[DataRequired()])
-    email = StringField("Email:" , validators=[DataRequired() , Email()])
+    email = StringField("Email:" , validators=[DataRequired()])
     password = PasswordField("Senha:" , validators=[DataRequired()])
     confirm_password = PasswordField("Confirme sua Senha:" ,validators=[DataRequired() , EqualTo('password')])
     submit = SubmitField("Registrar")
@@ -17,6 +17,6 @@ class RegisterForm(FlaskForm):
         
 class LoginForm(FlaskForm):
     nome = StringField("Nome de usuário:" , validators=[DataRequired()])
-    email = StringField("Email:", validators=[DataRequired() , Email()])
+    email = StringField("Email:", validators=[DataRequired()])
     password = PasswordField("Senha:" , validators=[DataRequired()])
     submit = SubmitField("Login")
