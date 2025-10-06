@@ -3,10 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nome da Página</title>
+    <title>AGROBRIDGE</title>
     <link rel="stylesheet" href="{{url_for('static' , filename='css/style.css')}}">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Gemunu+Libre:wght@200&display=swap"
+    rel="stylesheet" />
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <h1>AGRO<div class="logo1">BRIDGE</div></h1>
+        </div>
+        <ul>
+            <li><a href="{{url_for('login')}}">Login</a></li> 
+            <li><a href="{{url_for('registrar')}}">Registrar</a></li> 
+            <li><a href="#" target="_blank">teste3</a></li>
+        </ul>
+    </nav>
+
     <main>
         {%block content %}{% endblock %}
     </main>

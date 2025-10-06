@@ -1,0 +1,28 @@
+{% extends 'nav.html' %}
+
+{% block content %}
+    <div class="registrar">
+        <h1>REGISTRAR</h1>
+        <div class="container-dados">
+            <form action="" method="post">
+                {{ form.csrf_token }}
+
+                {{form.nome.label()}}
+                {{form.nome}}
+
+                {{form.email.label()}}
+                {{form.email}}
+               
+                {{form.password.label()}}
+                {{form.password}}
+
+                {{form.confirm_password.label()}}
+                {{form.confirm_password}}
+
+                {{form.submit}}
+            </form>
+        </div>
+    </div>
+    
+
+{% endblock %}
