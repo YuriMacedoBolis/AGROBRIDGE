@@ -6,7 +6,7 @@ class User(db.Model , UserMixin):
     id = db.Column(db.Integer , primary_key = True)
     nome = db.Column(db.String(100) , unique=True , nullable = False)
     email = db.Column(db.String(100) , unique=True , nullable = False)
-    password_hash = db.Column(db.String(20) , nullable=False)
+    password_hash = db.Column(db.String(200) , nullable=True)
     
 @login_manager.user_loader
 def load_user(user_id):
