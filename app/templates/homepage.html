@@ -1,21 +1,126 @@
 {% extends 'nav.html' %}
 
 {% block content %}
-    <div class="fotos">
-        <h2>Produto 1</h2>
-        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
-        <a href="https://www.youtube.com/">Onde comprar</a>
-        <a href="https://www.youtube.com/">Site oficial</a>
-    </div>
-    <div class="fotos">
-        <h2>Produto 2</h2>
-        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
-    </div>
-    <div class="fotos">
-        <h2>Produto 3</h2>
-        <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
-    </div>
+<div class="homepage">
+    <section class="imagem1">
+        <img class="trator-fundo" src="{{url_for('static', filename='imagens/trator_vermelho.jpg')}}" alt="Trator Vermelho">
+    </section>
     
+    <section class="carrossel">
+        <div class="carrossel-inner">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
 
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+        </div>
+    </section>
+    <section class="section-produtos">
+        <h1>TRATORES</h1>
+        <div class="produtos1">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+
+        <div class="produtos2">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-produtos">
+        <h1>TRATORES</h1>
+        <div class="produtos1">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+
+        <div class="produtos2">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="section-produtos">
+        <h1>TRATORES</h1>
+        <div class="produtos1">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+
+        <div class="produtos2">
+            <div class="col-a">
+                <h2>PRODUTO 1</h2>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores itaque dolores cumque harum est
+                accusamus, iste esse, exercitationem qui a suscipit tempore ab ipsam maxime atque ipsa at? Aliquid, ullam.
+            </P>
+            <a href="https://www.youtube.com/">Onde comprar</a>
+            <a href="https://www.youtube.com/">Site oficial</a>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg')}}" alt="">
+            </div>
+        </div>
+    </section>
     
+</div>
+
+
 {% endblock %}

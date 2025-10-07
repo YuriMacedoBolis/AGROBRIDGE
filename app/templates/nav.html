@@ -12,10 +12,20 @@
 <body>
     <nav>
         <div class="logo">
-            <h1>AGRO<div class="logo1">BRIDGE</div></h1>
+            <a href="{{url_for('homepage')}}">
+                <h1>AGRO<div class="logo1">BRIDGE</div></h1>
+            </a>
         </div>
         <ul>
             <li><a href="{{url_for('login')}}">Login</a></li> 
+            <li class="dropdown">
+                <a href="#">Maquinário</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Trator</a></li>
+                    <li><a href="#">Colheitadeira</a></li>
+                    <li><a href="#">Plantadeira</a></li>
+                </ul>
+            </li> 
             <li><a href="{{url_for('registrar')}}">Registrar</a></li> 
             <li><a href="#" target="_blank">teste3</a></li>
         </ul>
