@@ -1,6 +1,7 @@
 {% extends 'nav.html' %}
 
 {% block content %}
+<div class="register-page">
     <div class="registrar">
         <h1>REGISTRAR</h1>
         <div class="container-dados">
@@ -8,22 +9,23 @@
                 {{ form.csrf_token }}
 
                 {{form.nome.label()}}
-                {{form.nome}}
+                {{form.nome(placeholder="Seu Nome Completo")}}
 
                 {{form.email.label()}}
-                {{form.email}}
-               
+                {{form.email(placeholder="Seu Email")}}
+
                 {{form.password.label()}}
-                {{form.password}}
+                {{form.password(placeholder="Sua Senha")}}
 
                 {{form.confirm_password.label()}}
-                {{form.confirm_password}}
+                {{form.confirm_password(placeholder="Confirme Sua Senha")}}
 
                 {{form.submit}}
-                <a href="{{url_for('login_google')}}" class="login-google">Login Com o Google</a>
+                <a href="{{url_for('login_google')}}" class="login-google">Registrar Com o Google</a>
             </form>
+            <p style="color: #DAF1DE; font-size: 14px; margin-top: 30px;">Já tem uma conta? <a
+                    href="{{url_for('login')}}" style="color: #8EBB9B; font-weight: bold;">Login</a></p>
         </div>
     </div>
-    
-
+</div>
 {% endblock %}
