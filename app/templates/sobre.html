@@ -1,0 +1,83 @@
+{% extends 'nav.html' %}
+
+{% block content %}
+<section class="sobre">
+    <header>
+        <h1>Agrobridge</h1>
+        <p>Conectando o campo brasileiro à inovação tecnológica chinesa</p>
+    </header>
+    <h2>Sobre Nós</h2>
+    <p> O <strong>Agrobridge</strong> nasceu com o propósito de aproximar o agronegócio brasileiro das inovações
+        tecnológicas desenvolvidas na China. Sabemos que a falta de acesso à informação e às ferramentas modernas é um
+        dos principais desafios enfrentados pelos produtores rurais. </p>
+    <p> Por isso, criamos uma plataforma que funciona como uma <strong>ponte digital</strong>, permitindo que
+        agricultores e pecuaristas do Brasil possam conhecer, adquirir e aprender a utilizar tecnologias agrícolas de
+        ponta, como drones, sensores, sistemas de irrigação inteligente e softwares de monitoramento. </p>
+
+    <div class="missao-visao">
+        <div class="card">
+            <h3>Missão</h3>
+            <p>Promover a modernização do agronegócio brasileiro, conectando produtores rurais a soluções tecnológicas
+                globais de forma acessível e educativa.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Visão</h3>
+            <p>Ser referência na integração entre o campo e a tecnologia, impulsionando a sustentabilidade e a
+                competitividade do agronegócio brasileiro.</p>
+        </div>
+
+
+        <div class="card">
+            <h3>Valores</h3>
+            <p>Inovação, acessibilidade, sustentabilidade e compromisso com o desenvolvimento rural e tecnológico do
+                Brasil.</p>
+        </div>
+    </div>
+
+
+    <h2>Equipe Fundadora</h2>
+    <div class="equipe">
+        <div class="card-equipe">
+            <div class="col-a">
+                <h3>Lucas Queiroz Bardella</h3>
+                <p>Desenvolvedor e idealizador do projeto, responsável pela estruturação do projeto, pesquisas e contribuições para o desenvolvimento do AgroBridge</p>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="Foto Lucas Bardella">
+            </div>
+        </div>
+        <div class="card-equipe">
+            <div class="col-a">
+                <h3>Yuri Macedo Bolis</h3>
+                <p>Desenvolvedor do projeto, responsável pela criação da plataforma Flask , pela integração
+                    com tecnologias de autenticação e interface , responsável pelo layout visual , experiência do usuário e identidade visual do Agrobridge.</p>
+            </div>
+            <div class="col-b">
+                <img src="{{url_for('static' , filename='imagens/irrigacaoTeste.jpg')}}" alt="Foto Yuri Macedo Bolis">
+            </div>
+        </div>
+    </div>
+
+    <h2>Fontes de Pesquisa</h2>
+    <div class="fontes">
+        <div class="card">
+            <ul>
+                <li><a href="https://www.dji.com/agriculture" target="_blank">DJI Agriculture</a> - Drones e soluções
+                    inteligentes para pulverização e monitoramento.</li>
+                <li><a href="https://www.xa.com/" target="_blank">XAG</a> - Tecnologias agrícolas automatizadas e robôs
+                    de campo.</li>
+                <li><a href="https://www.alibaba.com/agriculture-equipment" target="_blank">Alibaba AgroTech</a> -
+                    Equipamentos agrícolas e inovações chinesas.</li>
+                <li><a href="https://929challenge.org/" target="_blank">929 Challenge</a> - Competição de startups que
+                    inspirou o desenvolvimento do Agrobridge.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+<footer>
+    <p>© 2025 Agrobridge. Todos os direitos reservados.</p>
+</footer>
+
+{% endblock %}

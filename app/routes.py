@@ -33,6 +33,11 @@ def registrar():
     
     return render_template('register.html' , form=form)
 
+#SOBRE NOS
+@app.route('/sobre')
+def sobre():
+    return render_template('sobre.html')
+
 
 #LOGIN COM GOOGLE
 @app.route('/login/google')

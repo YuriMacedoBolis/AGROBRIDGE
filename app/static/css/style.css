@@ -1,50 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-a{
+a {
     text-decoration: none;
-    color: #daf1de;
 }
 
-li{
+li {
     list-style: none;
 }
 
-.dropdown{
-    position: relative;
-}
 
-.dropdown-menu{
-    position: absolute;
-    top: 100%; /* logo abaixo do item principal */
-    left: 0;
-    background-color: #333;
-    display: none; /* escondido inicialmente */
-    flex-direction: column;
-    padding: 10px 0;
-    border-radius: 5px;
-    min-width: 160px;
-}
 
-.dropdown:hover .dropdown-menu {
-  display: flex;
-}
-
-main{
+main {
     height: calc(100vh - 82px);
 }
-body{
+
+body {
     margin: 0 auto;
     max-width: 1440px;
-    font-family: "DM sans" , sans-serif;
+    font-family: "DM sans", sans-serif;
+    background-color: #daf1de;
 }
 
 /* BARRA DE NAVEGAÇÃO EM CIMA */
 
-nav{
+nav {
     display: flex;
     position: fixed;
     width: 1440px;
@@ -61,68 +44,116 @@ nav{
     filter: blur(0.7px);
 }
 
-nav h1{
+nav h1 {
     display: flex;
     flex-direction: row;
-    color:#daf1de ;
+    color: #0b2b26;
+    transition: 0.3s ease-in;
 }
 
-nav h1 .logo1{
-    color: #daf1de;
+nav h1 .logo1 {
+    font-weight: 500;
+    color: #235347;
 }
 
-nav ul{
+nav ul {
     display: flex;
     flex-direction: row;
     gap: 40px;
     font-size: 25px;
 }
 
+nav ul li a {
+    color: #000000;
+    font-weight: 500;
+    transition: 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #0b2b26;
+}
+
+nav h1:hover {
+    color: #235347;
+    transform: scale(1.1);
+}
+
+
+.dropdown {
+    position: relative;
+
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    /* logo abaixo do item principal */
+    left: 0;
+    background: rgba(255, 255, 255, 0.295);
+    backdrop-filter: blur(10.5px);
+    -webkit-backdrop-filter: blur(13.5px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: none;
+    /* escondido inicialmente */
+    flex-direction: column;
+    padding: 10px 0;
+    border-radius: 5px;
+    min-width: 160px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: flex;
+}
+
 
 /* HOMEPAGE */
 
-.homepage{
+.homepage {
     display: flex;
     flex-direction: column;
     gap: 100px;
 }
 
 
-.trator-fundo{
+.trator-fundo {
     width: 1440px;
     height: 600px;
     object-fit: cover;
 }
 
-.homepage .imagem1{
-    margin-top: 110px;
-    background-color: white;
+.homepage .imagem1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #daf1de;
     width: 1440px;
-    height: 600px;
+    margin-top: 105px;
+    height: calc(100vh - 105px);
     position: relative;
     overflow: hidden;
     padding: 0;
     border-radius: 0;
+    gap: 100px;
 }
 
-.carrossel{
-    background-color: red;
-    width: 1440px;
-    overflow: hidden;
-    height: 800px;
+.carrossel {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #0b2b26;
 }
 
-.carrossel-inner{
+.carrossel-inner {
+    border-radius: 10px;
     display: flex;
     flex-direction: row;
-    gap: 50px;
+    gap: 30px;
     width: 200%;
     height: 300px;
     animation: carrossel-anim 30s linear infinite
 }
 
-.carrossel-inner img{
-    width: 15%;
+.carrossel-inner img {
+    border-radius: 10px;
+    width: 400px;
     height: 100%;
     object-fit: cover;
     flex-shrink: 0;
@@ -132,22 +163,23 @@ nav ul{
     from {
         transform: translateX(0);
     }
+
     to {
         transform: translateX(-100%);
     }
 }
 
 
-.homepage section{
+.homepage section {
     background-color: #0b2b26;
     color: #daf1de;
     padding: 20px;
     width: 1440px;
-    height: max-content;
+    min-height: calc(100vh -110px);
     border-radius: 10px;
 }
 
-.homepage section h1{
+.homepage section h1 {
     font-size: 40px;
     display: flex;
     flex-direction: row;
@@ -155,25 +187,25 @@ nav ul{
     justify-content: center;
 }
 
-.homepage section h2{
+.homepage section h2 {
     font-size: 30px;
     margin-bottom: 40px;
 }
 
-.homepage .section-produtos img{
+.homepage .section-produtos img {
     width: 400px;
     height: 400px;
     object-fit: cover;
 
 }
 
-.homepage .section-produtos{
+.homepage .section-produtos {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
-.homepage .produtos1{
+.homepage .produtos1 {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
@@ -183,7 +215,7 @@ nav ul{
     background-color: #235347;
 }
 
-.homepage .produtos2{
+.homepage .produtos2 {
     padding: 20px 0;
     display: flex;
     flex-direction: row;
@@ -193,7 +225,7 @@ nav ul{
     background-color: #235347;
 }
 
-.homepage .col-a{
+.homepage .col-a {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -201,17 +233,85 @@ nav ul{
     max-width: 50%;
 }
 
-.homepage .col-b{
+.homepage .col-b {
     width: auto;
     height: auto;
 }
 
+/* SOBRE NÓS */
+
+header {
+    background-color: #0b6623;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre{
+    background-color: aqua;
+    max-width: 1440px;
+    height: 100vh;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.missao-visao , .equipe , .fontes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.card {
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 250px;
+}
+
+.card-equipe{
+    flex: 1;
+    background-color: #f1f1f1;
+    padding: 20px;
+    border-radius: 8px;
+    min-width: 250px;
+    display: flex;
+    flex-direction: row;
+}
+
+.card-equipe .col-a , .col-b{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card-equipe .col-b img{
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+}
 
 
-.login{
+
+footer {
+    text-align: center;
+    background-color: #0b6623;
+    color: white;
+    padding: 15px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* FIM DO SOBRE NOS */
+
+.login {
     background-color: purple;
 }
 
-.registrar{
+.registrar {
     background-color: aquamarine;
 }
