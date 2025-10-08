@@ -1,6 +1,7 @@
 {% extends 'nav.html' %}
 
 {% block content %}
+<div class="login-page">
     <div class="login">
         <h1>LOGIN</h1>
         <div class="container-dados">
@@ -8,13 +9,18 @@
                 {{ form.csrf_token }}
 
                 {{form.nome.label()}}
-                {{form.nome}}
+                {{form.nome(placeholder="Seu Email")}}
 
                 {{form.password.label()}}
-                {{form.password}}
+                {{form.password(placeholder="Sua Senha")}}
 
                 {{form.submit}}
             </form>
+            <a href="#" style="color: #DAF1DE; font-size: 14px; margin-top: 15px; display: block;">Esqueceu sua
+                senha?</a>
+            <p style="color: #DAF1DE; font-size: 14px; margin-top: 30px;">Não tem uma conta? <a
+                    href="{{url_for('registrar')}}" style="color: #8EBB9B; font-weight: bold;">Registrar</a></p>
         </div>
     </div>
+</div>
 {% endblock %}
