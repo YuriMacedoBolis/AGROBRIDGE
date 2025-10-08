@@ -2,6 +2,7 @@
 
 {% block content %}
 <div class="login-page">
+    <img src="{{url_for('static', filename='imagens/irrigacaoTeste.jpg.png')}}" alt="">
     <div class="login">
         <h1>LOGIN</h1>
         <div class="container-dados">
@@ -18,8 +19,8 @@
             </form>
             <a href="#" style="color: #DAF1DE; font-size: 14px; margin-top: 15px; display: block;">Esqueceu sua
                 senha?</a>
-            <p style="color: #DAF1DE; font-size: 14px; margin-top: 30px;">Não tem uma conta? <a
-                    href="{{url_for('registrar')}}" style="color: #8EBB9B; font-weight: bold;">Registrar</a></p>
+            <p style="color: #DAF1DE; font-size: 16px; margin-top: 30px;">Não tem uma conta? <a
+                    href="{{url_for('registrar')}}" style="color: #DAF1DE; font-weight: bold;">Registrar</a></p>
         </div>
     </div>
 </div>
