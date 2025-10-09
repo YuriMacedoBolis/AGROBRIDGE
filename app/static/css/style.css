@@ -218,7 +218,7 @@ nav h1:hover {
     flex-direction: column;
     gap: 30px;
     min-height: 420px;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .homepage .produtos1 , .homepage .produtos2 {
@@ -344,7 +344,7 @@ header {
     width: 250px;
     height: 250px;
     border-radius: 100%;
-    background-size: cover;
+    object-fit: cover;
 }
 
 .fontes a{
