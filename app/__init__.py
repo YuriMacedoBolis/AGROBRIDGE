@@ -12,7 +12,9 @@ load_dotenv()
 app = Flask(__name__)
 
 #CONFIGURAÇÕES DO APP
-app.config["SECRET_KEY"] = os.getenv('SECRET_KEY')
+
+db_url = os.environ.get('DATABASE_URL' , 'sqlite:///agrobridge.db')
+app.config["SECRET_KEY"] = db_url
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///agrobridge.db'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
