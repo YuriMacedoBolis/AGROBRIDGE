@@ -1,8 +1,8 @@
-"""Iniciando novamente o db
+"""primeiro teste after render
 
-Revision ID: a70741f6a432
+Revision ID: 39c853e5ca28
 Revises: 
-Create Date: 2025-10-06 21:02:24.090105
+Create Date: 2025-10-09 14:32:12.385193
 
 """
 from alembic import op
@@ -10,7 +10,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = 'a70741f6a432'
+revision = '39c853e5ca28'
 down_revision = None
 branch_labels = None
 depends_on = None
