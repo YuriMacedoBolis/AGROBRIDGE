@@ -14,9 +14,8 @@ app = Flask(__name__)
 #CONFIGURAÇÕES DO APP
 
 
-db_url = os.environ.get('DATABASE_URL')
-app.config["SECRET_KEY"] = db_url
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config["SECRET_KEY"] = os.getenv('SECRET_KEY')
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URI')
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 
