@@ -89,9 +89,7 @@ nav h1:hover {
     top: 100%;
     /* logo abaixo do item principal */
     left: 0;
-    background: rgba(255, 255, 255, 0.295);
-    backdrop-filter: blur(10.5px);
-    -webkit-backdrop-filter: blur(13.5px);
+    background: rgb(255, 255, 255);
     border: 1px solid rgba(255, 255, 255, 0.18);
     display: none;
     /* escondido inicialmente */
@@ -283,7 +281,7 @@ header {
 
 .sobre{
     max-width: 1440px;
-    max-height: 100vh;
+    margin-bottom: 30px;
     padding: 40px;
 }
 
@@ -357,8 +355,6 @@ footer {
     background-color: #0b2b26;
     color: white;
     padding: 15px;
-    position: relative;
-    bottom: 0;
     border-radius: 10px;
 }
 

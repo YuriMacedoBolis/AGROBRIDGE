@@ -13,6 +13,7 @@ app = Flask(__name__)
 
 #CONFIGURAÇÕES DO APP
 
+
 db_url = os.environ.get('DATABASE_URL' , 'sqlite:///agrobridge.db')
 app.config["SECRET_KEY"] = db_url
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///agrobridge.db'
@@ -26,5 +27,6 @@ login_manager = LoginManager(app)
 login_manager.login_view = 'login'
 
 csrf = CSRFProtect(app)
+
 
 from app import routes , models
