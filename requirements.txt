@@ -7,4 +7,4 @@ Flask-Bcrypt
 python-dotenv
 Authlib
 gunicorn
-psycopg2-binary
+psycopg2
